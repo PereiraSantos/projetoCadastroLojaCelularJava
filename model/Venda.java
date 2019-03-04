@@ -3,7 +3,6 @@ package model;
 
 import interfaces.Transacao;
 
-
 public class Venda implements Transacao{
     private int codigoVenda;
     private int cpf;
@@ -88,23 +87,18 @@ public Venda(){
             if (this.getQMes() <= 6 ){
                 if (this.getQMes() >= 4){
                     this.setValorVenda(this.getValorVenda() + 400);  
-                    System.out.println(this.getValorVenda());
                 }else{
                     this.setValorVenda(this.getValorVenda() + 200);
-                    System.out.println(this.getValorVenda());
                 }        
             }else{
                 if (this.getQMes() >= 10){
                     this.setValorVenda(this.getValorVenda() + 800); 
-                    System.out.println(this.getValorVenda());
                 }else{
                     this.setValorVenda(this.getValorVenda()+ 600);
-                    System.out.println(this.getValorVenda());
                 }
             }
         }else{
             this.setValorVenda(this.getValorVenda()- 100);
-            System.out.println(this.getValorVenda());
         }
     }
 }
