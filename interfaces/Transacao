@@ -1,1 +1,5 @@
+package interfaces;
 
+public interface Transacao {    
+    public void vendaVista(String v);
+}
